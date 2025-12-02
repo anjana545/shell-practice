@@ -11,4 +11,4 @@ echo "Sum is: $SUM"
 
 LEADERS=("modi","CBN","PK")
 
-echo "Leaders: $LEADERS[0]"
+echo "Leaders: $LEADERS"
