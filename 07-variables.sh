@@ -11,4 +11,4 @@ END_TIME=$(date +%s)
 TOTAL_TIME=$((END_TIME-$START_TIME))
 
 
-echo "Timestamp executed: $(TOTAL_TIME) seconds"
+echo "Timestamp executed: $TOTAL_TIME seconds"
