@@ -9,6 +9,6 @@ SUM=$((NUMBER1+NUMBER2))
 
 echo "Sum is: $SUM"
 
-LEADERS=("modi","CBN", "PK")
+LEADERS=("modi","CBN","PK")
 
 echo "Leaders: $LEADERS[@]"
