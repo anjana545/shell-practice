@@ -1,11 +1,11 @@
 #!/bin/bash
 
+USERID=$(id -u)
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
     echo "ERROR:: Please run this script with root priveleges"
@@ -23,7 +23,6 @@ VALIDATE(){ # functions reeive inputs through args
 }
 
 dnf list installed mysql
-
 if [ $? -ne 0 ]; then
     dnf install mysql -y
     VALIDATE $? "MYSQL"
@@ -32,7 +31,6 @@ else
 fi
 
 dnf list installed nginx
-
 if [ $? -ne 0 ]; then
     dnf install nginx -y
     VALIDATE $? "NGINX"
@@ -41,7 +39,6 @@ else
 fi
 
 dnf list installed python3
-
 if [ $? -ne 0 ]; then
     dnf install python3 -y
     VALIDATE $? "PYTHON3"
